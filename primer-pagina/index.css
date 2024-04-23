@@ -1,3 +1,18 @@
-.as{
-  
+body {
+  background-color: rgb(0, 255, 106);
+}  
+p{
+  color: white;
+}
+h1{
+  color: aqua;
+}
+#id2{
+  color:purple;
+}
+.jesus{
+  color: yellow;
+}
+body {
+  background-color: red;
 }
