@@ -1,0 +1,64 @@
+.contenedor-padre {
+  width: 100%;
+  border: 2px solid red;
+  padding: 20px 10px;
+  /* display: flex
+  Para poder utilizar flexbox, le deberemos de asignar la propiedad display: flex a nuestro contenedor padre
+  */
+  display: flex;
+  /* 
+    flex-direction: row | row-reverse | column | column-reverse
+    
+    Es la encargada de definir el eje principal y secundario de nuestros
+    elementos hijos, al igual que la direccion de nuestros elementos.
+    Por defecto, la direccion de los elementos flex es row.
+  */
+  flex-direction: row;
+  /* 
+    flex-wrap: nowrap | wrap | wrap-reverse 
+    Por defecto flex, trata de disponer de los elementos en una misma línea, 
+si no es el caso que necesitás, con flex-wrap podés ordenar los elementos 
+en mas de una fila o columna. 
+  */
+  flex-wrap: wrap;
+
+  /* flex-flow: column wrap;
+
+La propiedad flex-flow, recibe dos parametros, primero la direccion de nuestros elementos (flex-direction),
+y el segundo parametro es si nuestros elementos se ordenaran o no (flex-wrap).
+Esta propiedad junta las prpiedades de flex-direction y flex-wrap.
+
+flex-direction: column;   ----> flex-flow: column wrap;
+flex-wrap: wrap;
+ */
+ 
+
+ /* justify-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly ;
+ 
+ Cuando nombramos el eje principal de un elemento padre, es decir el eje 
+ horizontal, se destaca esta propiedad para dar direccionamiento a los 
+ elementos hijos.
+ 
+ */
+ justify-content: center;
+
+ /* align-items: flex-start | flex-end | center | stretch | baseline ;
+
+Al igual que justify-content esta propiedad te permite distribuir los elementos en un eje, 
+pero esta vez en el eje vertical.
+
+*/
+align-items: center;
+}
+.item {
+  border: 2px solid green;
+  width: 160px;
+  height: 160px;
+}
+
+.order1{
+  order: 1;
+}
+.order2{
+ order: 2;
+}
