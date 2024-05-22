@@ -94,16 +94,114 @@ Conversión de temperaturas:
 Solicita al usuario una temperatura en grados Celsius 
 y conviértela a Fahrenheit utilizando la fórmula: F = C * 9/5 + 32.
 */
-// Entradas
-var celsuis = prompt("Ingrese la temperatura en grados celsuis")
+// // Entradas
+// var celsuis = prompt("Ingrese la temperatura en grados celsuis")
 
-// Convertir de string a number
-var celsuisNum = parseInt(celsuis)
+// // Convertir de string a number
+// var celsuisNum = parseInt(celsuis)
 
-// Proceso
+// // Proceso
 
-var fahrenheit = (celsuisNum * 9/5) + 32
+// var fahrenheit = (celsuisNum * 9/5) + 32
 
-// Salida
-alert("los grados celsuis de: "+ celsuis +" en fahrenheit son: "+fahrenheit)
+// // Salida
+// alert("los grados celsuis de: "+ celsuis +" en fahrenheit son: "+fahrenheit)
 
+
+// var string1 = "Blanca "
+// var string2 = "Benitez"
+
+// var concatencacionDeString1Strin2 = string1 + string2
+
+// console.log(concatencacionDeString1Strin2)
+// var comparacion = true && false //Resultado final false
+// var Or = true || false // true
+
+// var fechaDeHoy = prompt("Dame el dia de hoy")
+// var estaLloviendo = true
+
+
+// var resultado = "jueves" === fechaDeHoy &&  estaLloviendo === true
+
+// if ("jueves" === fechaDeHoy &&  estaLloviendo === true){
+//   console.log("Es jueves y esta lloviendo")
+// } else {
+//   console.log("No es jueves")
+// }
+
+// else if(condicion)
+
+  // var edad = prompt("CUAL ES TU EDAD?")
+  // var edadNum = parseInt(edad)
+  // var cedula = true
+
+  // if(edad >= 21 && cedula === true) {
+  //   console.log("Eres mayor en todo el mundo y puedes entrar a cualquier fiesta")
+  // } else if(edad >= 18) {
+  //   console.log("ERES MAYOR DE EDAD y tienes la cedula al dia")
+  // } else {
+  //   console.log("No eres mayor por lo que no puedes entrar a la fiesta")
+  // }
+
+  // Semaforo
+  // var semaforo = prompt("Dime un color del semaforo")
+  // if(semaforo === "verde")
+  // {
+  //   console.log("Avanza")
+  // } 
+  // else if(semaforo === "amarillo")
+  // {
+  //   console.log("comienza a frenar o ten precaucion")
+  // }
+  // else if(semaforo === "rojo")
+  // {
+  //   console.log("Detente")
+  // } 
+  // else
+  // {
+  //   console.log("No escribiste los valores aceptados que son: verde, amarillo y rojo")
+  // }
+
+  //arrays
+
+  // Crear un array
+  var miarray = ['Susana', 'Rafael','Jesus', 'Jorge', 'Angel', 'Emilyo']
+
+  console.log(miarray)
+  // Acceder a la posicion
+  console.log('El nombre del alumno: ' + miarray[1]) //Rafael
+
+  // Modificar un array
+  miarray[5] = 'Emilio'
+  console.log(miarray)
+  //Length
+  console.log(miarray.length)//6
+
+  //Agregar un dato a la lista
+  miarray.push('Adriana')
+  console.log(miarray)
+  miarray.push('Adriana')
+
+  miarray.pop()
+
+  miarray.unshift('Guadalupe')
+  miarray.unshift('Guadalupe')
+  miarray.shift()
+
+// Objetos Literal
+var mascotas = {
+  nombre: "Wally",
+  tipo: "Canino",
+  edad: 7,
+  macho: true
+}
+
+// Acceder a un objeto
+//notacion por punto
+console.log("Nombre: "+ mascotas.nombre)
+console.log("Edad:" + mascotas['edad'])
+
+//Desestructuracion
+var {nombre,tipo} = mascotas
+
+console.log("La mascota "+nombre +" es de tipo: "+ tipo )
