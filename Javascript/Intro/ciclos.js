@@ -16,6 +16,13 @@ while(!(userInput == ""))
 }
 console.log("Introduciste estos valores: "+arreglo)
 
+do{
+  userInput = prompt("Ingrese cualquier caracter")
+  arreglo.push(userInput)
+} while(userInput== "")
+
+console.log("Introduciste estos valores: "+arreglo)
+
 
 // Do while
 var contador = 0
