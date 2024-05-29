@@ -5,7 +5,8 @@ function miFuncion() {
   //codigo a ejecutar
 }
 
-function saludar (nombre) {
+function saludar () {
+  var nombre = prompt("Cual es tu nombre?")
   console.log("Hola " + nombre)
 }
 
@@ -36,14 +37,14 @@ function mostrarMensaje(){
   console.log(mensaje)
 }
 
-mostrarMensaje()
+// mostrarMensaje()
 
 // scope local
 function mostrarMensajeScopeLocal(){
-  let mensajeLocal = "Hola mundo scope local"
-  console.log(mensajeLocal)
+  let mensaje = "Hola mundo scope local"
+  console.log(mensaje)
 }
 
-console.log("console.log: ",mensajeLocal)
+console.log("console.log: " + mensaje)
 
-mostrarMensajeScopeLocal()
+//mostrarMensajeScopeLocal()
