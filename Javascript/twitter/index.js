@@ -35,11 +35,26 @@ function crearTweet() {
     <div>
       <p>${data.text}</p>
       <span class="options">
-        <i class="fa-regular fa-pen-to-square"></i>
-        <i class="fa-solid fa-trash"></i>
+        <i onclick="editTweet(this)">✍🏻</i>
+        <i onclick="deleteTweet(this)">🗑️</i>
       </span>
     </div>
   `
   // Limpiar input
   input.value = ""
+}
+
+function deleteTweet (evento) {
+  contadorDeTweets = contadorDeTweets - 1
+  total.innerHTML = "Total: "+contadorDeTweets
+  evento.parentElement.parentElement.remove()
+}
+
+function editTweet (evento) {
+  console.log(evento)
+  contadorDeTweets = contadorDeTweets - 1
+  total.innerHTML = "Total: "+contadorDeTweets
+
+  input.value =  evento.parentElement.previousElementSibling.innerHTML;
+  evento.parentElement.parentElement.remove()
 }
